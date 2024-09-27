@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+    <head>
+        <title>Recycling Waste</title>
+        <link rel="stylesheet" href="{% static 'app/css/home.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body class="body">
+        <div class="container">
+        <div class="flexbox-navbar">
+            <div class="left-content"><p class="text1"></p></div>
+            <div class="flexbox-navbar-right">
+                <div class="navbar-right-elements"><p class="text2"><a class='text2' style="text-decoration: none; color:grey;" href={% url 'app:home' %}>Home</a></p></div>
+                <div class="navbar-right-elements"><p class="text2"><a class='text2' style="text-decoration: none; color:grey;" href={% url 'app:upload' %}>Upload Item</a></p></div>
+                <div class="navbar-right-elements"><p class="text2"><a class='text2' style="text-decoration: none; color:grey;" href={% url 'logout' %}>Logout</a></p></div>
+            </div>
+        </div>
+        <div class="container2">
+        <div class="container3">
+            <div class="image-container">       
+                <img class="image1" src="{% static 'app/images/download 2.jpeg' %}" alt="image is not available">
+            </div>
+            <div class="container4">
+                <div class="text-container">
+                    <h1 class="text6">The Bright Future of Web 3.0?</h1>
+                </div>
+                <div class="text-container2">
+                    <p class="text7">
+                        Explore the importance of recycling in building a sustainable future for our planet. Learn how recycling materials can help 
+                        conserve natural resources and reduce environmental pollution.
+                    </p>
+                    <button style='background-color:green;'class="button">READ MORE</button>
+                </div>
+            </div>
+        </div>
+        <div class="new-container">
+            <h1 class="text4" style="color:white">Recycling</h1>
+            <div class="new1">
+                <h2 class="text5"><a class='text5' href="https://earth911.com/business-policy/paper-recycling-details-basics/">Paper Recycling: How It Works</a></h2>
+                <p class="text3">Discover the process of recycling paper and how it contributes to saving trees and reducing landfill waste.</p>
+            </div>
+            <div class="new1">
+                <h2 class="text5"><a class="text5" href="https://www.recyclenow.com/how-to-recycle/plastic-recycling" >Recycling Plastics: Challenges and Solutions</a> </h2>
+                <p class="text3">Explore the complexities of recycling plastics and innovative solutions to address plastic pollution.</p>
+            </div>
+            <div class="new2">
+                <h2 class="text5"><a class="text5" href="https://cdscrapmetal.com/">Metal Recycling: Benefits and Impact</a></h2>
+                <p class="text3">Learn about the benefits of recycling metals and its positive impact on energy conservation and resource efficiency.</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container5">
+        <div class="container6">
+                <img class="image2" src="{% static 'app/images/image3.png' %}" alt="image not available">
+                <div class="container7">
+                <h2 class="text8">01</h2>
+                <h3 class="text9">Reviving Electronic Waste</h3>
+                <p class="text10"> Discover the process of recycling electronic waste</p>
+                </div>
+        </div>
+        <div class="container6">
+            <img class="image2" src="{% static 'app/images/image4.png' %}" alt="image not available">
+            <div class="container7">
+                <h2 class="text8">02</h2>
+                <h3 class="text9">Glass Recycling</h3>
+                <p class="text10"> Learn about the benefits of recycling glass.</p>
+            </div>
+        </div>
+        <div class="container6">
+                <img class="image2" src="{% static 'app/images/image5.jpeg' %}" alt="image not available">
+            <div class="container7">
+                <h2 class="text8">03</h2>
+                <h3 class="text9">Organic Waste Recycling</h3>
+                <p class="text10"> Explore the significance of recycling organic waste</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </body>
+</html>
+
+
+  
+  
+  
+
+  

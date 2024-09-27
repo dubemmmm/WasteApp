@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Text Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: #f2f7f2; /* Light green background color */
+        }
+        
+        h1, h2 {
+            color: #2e8b57; /* Darker green color */
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+
+        #generated-text-container {
+            background-color: white; /* White background for the text box */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #back-button {
+            background-color: #2e8b57; /* Darker green color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="generated-text-container">
+        <h2>Recycling Instructions</h2>
+        <div id="generated-text">
+            <p style='font-weight:bold; font-size:20px; text-transform:uppercase;'>Item: {{ item | safe }}</p>
+            <ol>
+            {% for step in steps %}
+            <li>{{step}}</li>
+            {% endfor %}
+            </ol>
+        </div>
+        <button id="back-button" onclick="goBack()">Go Back</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
